@@ -1,0 +1,284 @@
+/* UNIVERSALS */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'open sans';
+  font-size: 16px;
+  line-height: 1.625;
+  margin: 0px;
+  color: #4A4A4A;
+}
+
+a {
+  text-decoration: none;
+  color: #4A4A4A;
+}
+
+@font-face {
+  font-family: NewMedia;
+  src: url(assets/NewMedia.ttf);
+}
+
+
+/* TYPOGRAPHY */
+h1, h2, h3 {
+  font-family: 'open sans';
+}
+h1 {
+  font-size: 3.0rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.0rem;
+}
+small {
+  font-size: 0.75rem;
+}
+ul {
+  list-style-type: square;
+  padding-left: 18px;
+}
+ul ul {
+  list-style-type: circle;
+  padding-left: 18px;
+}
+
+/* GRID SYSTEM */
+
+.row:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.col {
+  float: left;
+  /*min-height: 100px;*/
+  position: relative;
+}
+.col-12 {
+  width: 100%;
+}
+.col-11 {
+  width: 91.66666666666666%;
+  width: calc(100% * 11/12);
+}
+.col-10 {
+  width: 83.33333333333334%;
+  width: calc(100% * 10/12);
+}
+.col-9 {
+  width: 75%;
+}
+.col-8 {
+  width: 66.66666666666666%;
+  width: calc(100% * 8/12);
+}
+.col-7 {
+  width: 58.333333333333336%;
+  width: calc(100% * 7/12);
+}
+.col-6 {
+  width: 50%;
+}
+.col-5 {
+  width: 41.66666666666667%;
+  width: calc(100% * 5/12);
+}
+.col-4 {
+  width: 33.33333333333333%;
+  width: calc(100% * 4/12);
+}
+.col-3 {
+  width: 25%;
+}
+.col-2 {
+  width: 16.666666666666664%;
+  width: calc(100%*2/12);
+}
+.col-1 {
+  width: 8.333333333333332%;
+  width: calc(100%*1/12);
+}
+
+/* OFFSETS */
+.offset-11 {
+  margin-left: 91.66666666666666%;
+  margin-left: calc(100% * 11/12);
+}
+.offset-10 {
+  margin-left: 83.33333333333334%;
+  margin-left: calc(100% * 10/12);
+}
+.offset-9 {
+  margin-left: 75%;
+}
+.offset-8 {
+  margin-left: 66.66666666666666%;
+  margin-left: calc(100% * 8/12);
+}
+.offset-7 {
+  margin-left: 58.333333333333336%;
+  margin-left: calc(100% * 7/12);
+}
+.offset-6 {
+  margin-left: 50%;
+}
+.offset-5 {
+  margin-left: 41.66666666666667%;
+  margin-left: calc(100% * 5/12);
+}
+.offset-4 {
+  margin-left: 33.33333333333333%;
+  margin-left: calc(100% * 4/12);
+}
+.offset-3 {
+  margin-left: 25%;
+}
+.offset-2 {
+  margin-left: 16.666666666666664%;
+  margin-left: calc(100%*2/12);
+}
+.offset-1 {
+  margin-left: 8.333333333333332%;
+  margin-left: calc(100%*1/12);
+}
+
+
+/* Custom Styling*/
+header {
+  height: 76px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+  width: 100%;
+}
+nav a {
+  font-size: 18px;
+  line-height: 76px;
+  padding-left: 38px;
+  text-decoration: none;
+  font-family: NewMedia;
+  font-weight: bold;
+}
+
+img.logo {
+  height: 30px;
+  margin: 23px 0px;
+}
+
+.banner .heading {
+  font-family: NewMedia;
+  font-weight: bold;
+  font-size: 50px;
+  display: block;
+  margin-top: 90px;
+}
+
+.banner .subheading {
+  font-weight: lighter;
+  font-size: 18px;
+  margin-top: 32px;
+  margin-bottom: 53px;
+}
+
+.solutions .solution-heading {
+  font-family: NewMedia;
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 20px;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+.solutions .solution-text {
+  font-weight: lighter;
+  font-size: 14px;
+  padding-right: 20px;
+  padding-left: 10px;
+  margin-top: 8px;
+}
+
+img.solution {
+  width: 77px;
+  height: 74px;
+}
+
+.product-button {
+  font-family: NewMedia;
+  font-weight: bold;
+  font-size: 18px;
+  color: #8A9BA8;
+  font-size: 18px;
+  border: 2px solid #8A9BA8;
+  width: 306px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 64px;
+}
+
+
+
+
+/* Phone size */
+@media (max-width: 760px) {
+  .container {
+    width: 100%;
+  }
+  .sm-col-12 {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .sm-col-6 {
+    width: 50%;
+    margin-left: 0%;
+  }
+}
+
+/* iPad size */
+@media (max-width: 1200px) and (min-width: 761px) {
+  .md-col-12 {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .md-col-6 {
+    width: 50%;
+  }
+  .md-col-4 {
+    width: 33.33333333333333%;
+    width: calc(100% * 4/12);
+  }
+  .md-col-3 {
+    width: 25%;
+  }
+}
+
+/* TEXT POSITIONING*/
+
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.justify {
+  text-align: justify;
+}
+.flex-valign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
