@@ -18,9 +18,10 @@ a {
 }
 
 @font-face {
-  font-family: NewMedia;
-  src: url(assets/NewMedia.ttf);
+  font-family: 'NewMedia';
+  src: url('../assets/NewMedia.ttf') format('truetype');
 }
+
 
 
 /* TYPOGRAPHY */
