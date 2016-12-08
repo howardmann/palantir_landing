@@ -163,7 +163,7 @@ header {
   width: 100%;
 }
 nav a {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 76px;
   padding-left: 38px;
   text-decoration: none;
@@ -171,24 +171,33 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover {
+  color: #8A9BA8;
+}
+
 img.logo {
   height: 30px;
   margin: 23px 0px;
+  padding-left: 15px;
+}
+
+img.hamburger {
+  display: none;
 }
 
 .banner .heading {
   font-family: NewMedia;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 45px;
   display: block;
-  margin-top: 90px;
+  margin-top: 75px;
 }
 
 .banner .subheading {
   font-weight: lighter;
   font-size: 18px;
-  margin-top: 32px;
-  margin-bottom: 53px;
+  margin-top: 5px;
+  margin-bottom: 59px;
 }
 
 .solutions .solution-heading {
@@ -209,8 +218,10 @@ img.logo {
 }
 
 img.solution {
-  width: 77px;
-  height: 74px;
+  width: 100%;
+  max-width: 77px;
+  max-height: 74px;
+  padding-right: 5px;
 }
 
 .product-button {
@@ -224,7 +235,14 @@ img.solution {
   display: block;
   margin: 0 auto;
   text-align: center;
-  margin-top: 64px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.product-button:hover {
+  cursor: pointer;
+  color: #4A4A4A;
+  border-color: #4A4A4A;
 }
 
 
@@ -243,10 +261,37 @@ img.solution {
     width: 50%;
     margin-left: 0%;
   }
+  nav a {
+    display: none;
+  }
+  img.hamburger {
+    display: inline-block;
+    height: 30px;
+    margin-right: 14px;
+    margin-top: 24px;
+  }
+  .banner .heading {
+    font-size: 33px;
+    margin: 65px 65px 0px 65px;
+    padding: 0px;
+  }
+  .banner .subheading {
+    margin: 26px 28px 36px 28px;
+  }
+  .sm-hide {
+    display: none;
+  }
+  .col-solution {
+    padding: 43px 37px;
+  }
 }
+
 
 /* iPad size */
 @media (max-width: 1200px) and (min-width: 761px) {
+  .container {
+    width: 90%;
+  }
   .md-col-12 {
     width: 100%;
     margin-left: 0%;
