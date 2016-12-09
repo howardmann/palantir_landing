@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
   var clicked = false;
-  $('#hamburger').bind('click touchstart', function(){
+  $('#hamburger').css('cursor','pointer');
+  $('#hamburger').bind('click', function(){
     if (!clicked) {
       $('.line-1, .line-2, .line-3').addClass('active');
       $('.drop-down').fadeIn();
