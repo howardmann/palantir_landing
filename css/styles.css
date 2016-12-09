@@ -162,6 +162,10 @@ header {
   height: 76px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
   width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  background-color: white;
 }
 nav a {
   font-size: 16px;
@@ -182,10 +186,71 @@ img.logo {
   padding-left: 15px;
 }
 
-img.hamburger {
+#hamburger {
+  display: none;
+  margin-right: 14px;
+  margin-top: 24px;
+  position: relative;
+}
+
+#hamburger:hover {
+  cursor: pointer;
+}
+.line-1, .line-2, .line-3 {
+  margin-top:5px;
+  background-color:#8A9BA8;
+  width:35px;
+  height:3px;
+  display:block;
+  position:relative;
+  opacity:1.0;
+  border-radius:15%;
+  transition: all .3s;
+}
+
+.line-1.active {
+  transform: rotate(45deg);
+  top: 7.5px;
+}
+
+.line-3.active {
+  transform: rotate(-45deg);
+}
+
+.line-2.active {
   display: none;
 }
 
+.drop-down {
+  font-family: 'NewMedia';
+  font-size: 16px;
+  background: #EAECF0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+  height: 280px;
+  width: 100%;
+  position: fixed;
+  top: 76px;
+  z-index: 1;
+}
+
+.drop-down.flex-valign {
+  display: none;
+}
+
+.drop-down ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.drop-down ul li {
+  padding-top: 36px;
+  height: auto;
+}
+
+.banner {
+  margin-top: 75px;
+}
 .banner .heading {
   font-family: NewMedia;
   font-weight: bold;
@@ -265,11 +330,8 @@ img.solution {
   nav a {
     display: none;
   }
-  img.hamburger {
+  #hamburger {
     display: inline-block;
-    height: 30px;
-    margin-right: 14px;
-    margin-top: 24px;
   }
   .banner .heading {
     font-size: 33px;
